@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "wakala2",
+    "slug": "wakala2",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
