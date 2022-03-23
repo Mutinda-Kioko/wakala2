@@ -3,17 +3,9 @@
     "name": "Wakala",
     "slug": "Wakala",
     "version": "1.0.0",
+    "platforms": ["ios", "android"], 
     "assetBundlePatterns": [
       "**/*"
-    ],
-    "splash": {
-      "image": "./assets/splash.png",
-      "backgroundColor": "#FCF8ED",
-      "resizeMode": "contain"
-    },
-    "icon": {
-      "image": "./assets/icon.png",
-      "resizeMode": "contain"
-    }
+    ]
   }
 }
