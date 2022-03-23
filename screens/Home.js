@@ -78,7 +78,7 @@ const scrollRef = useRef(null);
         onPress={() => navigation.navigate('User')}
         >
     <Image
-      style={styles.menuIcon}
+      style={styles.qrIcon}
       source={require('../images/Qr.png')}
   />
         </TouchableOpacity>
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
 },
 buttonsContainer:{
   width:'100%',
-  height:100,
+  height:90,
   display:'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -127,6 +127,12 @@ sendButton:{
   display:'flex',
   justifyContent: 'center',
   alignItems: 'center',
+},
+qrIcon:{
+  width: 38,
+  height: 38,
+  resizeMode: 'contain',
+  
 },
 });
 export default Home;
