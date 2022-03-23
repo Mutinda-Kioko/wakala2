@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React, {useState, useCallback,useRef } from 'react';
-import { Text, Pressable, StyleSheet, SafeAreaView, Image,View } from 'react-native';
+import { Text,StyleSheet, SafeAreaView, Image,View } from 'react-native';
 import ListItem from '../components/ListItem';
 import {ScrollView, TouchableOpacity} from 'react-native-gesture-handler';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -39,7 +39,7 @@ const scrollRef = useRef(null);
 </ScrollView>
 <View style={styles.buttonsContainer}>
 <LinearGradient 
-    colors={['#f0f1e9', '#f0e4f2']} 
+    colors={['#133FDB', 'rgba(183, 0, 77, 0.3)']} 
     start={{
       x: 0,
       y: 0
@@ -57,13 +57,13 @@ const scrollRef = useRef(null);
         </TouchableOpacity>
       </LinearGradient>
       <LinearGradient 
-    colors={['#f0f1e9', '#f0e4f2']} 
+    colors={['#133FDB', 'rgba(183, 0, 77, 0.3)']} 
     start={{
       x: 0,
       y: 0
     }}
     end={{
-      x: 1,
+      x: 0.25,
       y: 1
     }}
     style={styles.sendContainer}>
@@ -105,7 +105,10 @@ buttonsContainer:{
   width:'100%',
   height:100,
   display:'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
   flexDirection: 'row',
+  justifyContent: 'space-evenly',
   shadowColor: "rgba(51,51,51,1)",
   shadowOffset: {
     width: 3,
@@ -116,11 +119,8 @@ buttonsContainer:{
   shadowRadius: 0,
 },
 sendContainer:{
-  borderWidth: 1,
   width:120,
   height:40,
-  borderWidth: 1,
-  borderColor: "rgba(51,51,51,0.8)",
   borderRadius: 30,
 },
 sendButton:{
