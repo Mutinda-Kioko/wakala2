@@ -1,10 +1,19 @@
 {
   "expo": {
-    "name": "wakala2",
-    "slug": "wakala2",
+    "name": "Wakala",
+    "slug": "Wakala",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#FCF8ED",
+      "resizeMode": "contain"
+    },
+    "icon": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain"
+    }
   }
 }

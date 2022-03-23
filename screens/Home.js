@@ -27,7 +27,12 @@ const scrollRef = useRef(null);
   />
   </TouchableOpacity>
 </View>
-<ScrollView ref={scrollRef} style={{ flex: 1, marginTop:20 }}>
+<ScrollView 
+ref={scrollRef}
+ style={{ flex: 1, marginTop:20 }}
+showsVerticalScrollIndicator={false}
+showsHorizontalScrollIndicator={false}
+ >
         {tasks.map((task) => (
           <ListItem
             simultaneousHandlers={scrollRef}
@@ -109,14 +114,16 @@ buttonsContainer:{
   alignItems: 'center',
   flexDirection: 'row',
   justifyContent: 'space-evenly',
-  shadowColor: "rgba(51,51,51,1)",
-  shadowOffset: {
-    width: 3,
-    height: 3
-  },
-  elevation:5,
-  shadowOpacity: 0.55,
-  shadowRadius: 0,
+  backgroundColor: '#F5F5F5',
+  borderRadius: 10,
+  shadowOpacity: 0.08,
+    shadowOffset: {
+      width: 0,
+      height: 20,
+    },
+  shadowRadius: 10,
+  elevation:2,
+  
 },
 sendContainer:{
   width:120,
