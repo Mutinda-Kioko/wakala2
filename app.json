@@ -3,9 +3,18 @@
     "name": "Wakala",
     "slug": "Wakala",
     "version": "1.0.0",
+    "icon": "./assests/icon.png",
     "platforms": ["ios", "android"], 
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier": "kiokojohn2275@gmail.com",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "kiokojohn2275@gmail.com",
+      "versionCode": 1
+    }
   }
 }
