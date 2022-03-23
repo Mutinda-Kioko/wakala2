@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "Wakala",
-    "slug": "Wakala",
+    "name": "wakala",
+    "slug": "wakala",
     "version": "1.0.0",
     "icon": "./assests/icon.png",
     "platforms": ["ios", "android"], 
+    "sdkVersion": "44.0.0",
     "assetBundlePatterns": [
       "**/*"
     ],
